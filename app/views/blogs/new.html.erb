@@ -1,0 +1,40 @@
+<%= render "shared/header"%>
+<div class="contentsrow">
+  <div class="content">
+    <h3 class="blog">投稿する</h3>
+    <%= form_with(model: @blog, local: true) do |form| %>
+    <div class="img-upload">
+      <div class="click-upload">
+        <p>
+          クリックしてファイルをアップロード
+        </p>
+        <input id="item-image" type="file" name="item[image]">
+      </div>
+    </div>
+      <div class = "main">
+        <div class ="main-title">
+          <textarea class="blog-title" id="blog-name" placeholder="タイトル" maxlength="40" name="blog[name]"></textarea>
+        </div>
+        <div class="main-sentence" >
+          <textarea class="blog-text" id="item-info" placeholder="今日の内容" rows="7" maxlength="10000" name="item[info]"></textarea>
+        </div>
+        <div class="main-date">
+          <%= raw sprintf(
+            form.date_select(
+            :age,
+            id:"birth-home",
+            use_month_numbers: true,
+           prompt:'--',
+           start_year: 2020,
+           end_year: (Time.now.year + 5),
+           date_separator: '%s'),
+           "<p> 年 </p>", "<p> 月 </p>") + "<p> 日 </p>" %>
+        </div>
+        <div class ="main-btn">
+          <%= form.submit "投稿する",class:"sell-btn" %> 
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>  
+<%= render "shared/footer"%>

@@ -13,6 +13,21 @@
 
         <!-- Blog Post -->
         <div class="card mb-4">
+          <% @blogs.each do |blog| %>
+          <div class="card-img-top" style="background-image: url(<%= blog.image %>);">
+            <div class = "card-body">
+              <h2 class = "card-title"><%= blog.title %></h2>
+              <p class="card-text"><%= blog.setence %></p>
+              <a href="#" class="btn btn-primary">Read More &rarr;</a>
+            </div>
+            <div class="card-footer text-muted">
+              <%= blog.date%>
+              <a href="#">Start Bootstrap</a>
+            </div>
+          </div>
+          <% end %>
+        </div>
+        <div class="card mb-4">
           <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
           <div class="card-body">
             <h2 class="card-title">Post Title</h2>
@@ -131,7 +146,10 @@
 
   </div>
   <!-- /.container -->
-  
+  <a class="purchase-btn" href="/blogs/new">
+    <span class="purchase-btn-text">出品する</span>
+    <img class="purchase-btn-icon" src="/assets/icon_camera-24c5a3dec3f777b383180b053077a49d0416a4137a1c541d7dd3f5ce93194dee.png" width="185" height="50">
+  </a>
 <%= render "shared/footer"%>
 
   <!-- Bootstrap core JavaScript -->
