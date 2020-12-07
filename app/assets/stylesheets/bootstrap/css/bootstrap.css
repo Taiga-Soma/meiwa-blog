@@ -10259,5 +10259,15 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6;
   }
+  .purchase-btn {
+    width: 120px;
+    background: #3ccace;
+    text-align: center;
+    border-radius: 4%;
+    bottom: 32px;
+    right: 32px;
+    position: fixed;
+    padding: 15px;
+  }
 }
 /*# sourceMappingURL=bootstrap.css.map */
