@@ -14,7 +14,8 @@
         <!-- Blog Post -->
         <div class="card mb-4">
           <% @blogs.each do |blog| %>
-          <div class="card-img-top" style="background-image: url(<%= blog.image %>);">
+          <div class="card-img-top">
+            <%= image_tag blog.image, class:'blog-image' if message.image.attached? %>
             <div class = "card-body">
               <h2 class = "card-title"><%= blog.title %></h2>
               <p class="card-text"><%= blog.setence %></p>
@@ -23,6 +24,7 @@
             <div class="card-footer text-muted">
               <%= blog.date%>
               <a href="#">Start Bootstrap</a>
+              <%= l message.created_at %>
             </div>
           </div>
           <% end %>
