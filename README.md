@@ -1,6 +1,6 @@
 # [Start Bootstrap - Blog Home](https://startbootstrap.com/template/blog-home/)
 
-[Blog Home](https://startbootstrap.com/template/blog-home/) is a basic blog homepage HTML starter template for [Bootstrap](https://getbootstrap.com/) created by [Start Bootstrap](https://startbootstrap.com/).
+[Blog Home]（https://startbootstrap.com/template/blog-home/）は、[Start Bootstrap]（https）によって作成された[Bootstrap]（https://getbootstrap.com/）の基本的なブログホームページHTMLスターターテンプレートです。 ：//startbootstrap.com/）。
 
 ## Preview
 
