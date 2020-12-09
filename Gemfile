@@ -59,3 +59,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'mini_magick'
 gem 'devise'
 gem 'coffee-rails', '5.0.0'
+gem 'gretel'
